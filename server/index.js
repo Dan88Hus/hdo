@@ -14,11 +14,6 @@ app.use(express.urlencoded({
 }));
 
 
-consola.ready({
-    message: `here`,
-    badge: true
-  })
-
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
 config.dev = !(process.env.NODE_ENV === 'production')
@@ -50,8 +45,8 @@ async function start() {
 start()
 
 // for test purposes
-app.get('/test', (req,res)=>{
-    res.send('test is OK')
+app.get('/test', (req, res) => {
+  res.send('test is OK')
 })
 
 
@@ -60,5 +55,6 @@ app.get('/test', (req,res)=>{
 
 var normalizedPath = require("path").join(__dirname, "routes");
 
+
 // files in routes folder for rest API 
-readdirSync(normalizedPath).forEach((file) => app.use("/api", require("./routes/" + file)) )
+readdirSync(normalizedPath).forEach((file) => {app.use("/api", require("./routes/" + file))})
