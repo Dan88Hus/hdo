@@ -13,14 +13,11 @@ let publicSecureUrl = [];
 
 exports.images = async function (req, res) {
   let publicId = [];
-
   try {
     await cloudinary.api.resources(
       { resource_type: "image", type: "upload", max_results: 50 },
       function (error, result) {
-        console.log("here",result, error);
         result.resources.forEach((element) => {
-          // console.log("RESULT: ", element.secure_url)
           publicSecureUrl.push(element.secure_url);
         });
       }
@@ -32,10 +29,6 @@ exports.images = async function (req, res) {
   publicSecureUrl = [];
 };
 
-exports.test = async function (req,res) {
-  console.log('test is ok')
-  res.json('test is ok').status(200);
-}
 
 // exports.sendMail = async (req, res) => {
 //   // console.log("TEST SEND MAIL")

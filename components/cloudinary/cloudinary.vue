@@ -85,7 +85,6 @@ export default {
     fetchImages() {
       this.$axios.$post("api/images").then((res) => {
         this.imageUrls = res;
-        console.log(this.imageUrls)
       });
     },
     zoom(src) {

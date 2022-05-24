@@ -1,3 +1,4 @@
+require("dotenv").config();
 
 module.exports = {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -41,11 +42,15 @@ module.exports = {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    "@nuxtjs/dotenv",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    "@nuxtjs/axios",
+    "@nuxtjs/dotenv",
   ],
+
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
