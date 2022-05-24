@@ -1,11 +1,13 @@
 <template>
 <v-app>
-  hello
+  <Services/>
 </v-app>
 
 </template>
 
 <script>
+import Services from '../components/services/services.vue';
 export default {
+    components: { Services }
 }
 </script>
