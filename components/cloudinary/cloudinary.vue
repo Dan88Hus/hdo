@@ -1,7 +1,5 @@
 <template>
-  <v-app>
     <v-container>
-      <!-- {{ this.imageUrls.length }} -->
       <v-divider width="0"></v-divider>
       <p class="text-left">some pictures from our past projects</p>
       <v-divider width="0"></v-divider>
@@ -58,8 +56,6 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-divider width="0"></v-divider>
-  </v-app>
 </template>
 
 <script>
@@ -96,25 +92,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .mdi-instagram { // deprecated
-//   background: radial-gradient(
-//     circle at 30% 107%,
-//     #fdf497 0%,
-//     #d8d8d6 5%,
-//     #fd5949 45%,
-//     #d6249f 60%,
-//     #285aeb 90%
-//   );
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   -webkit-text-fill-color: transparent;
-// }
 a {
   text-decoration: none !important;
 }
-// ::v-deep .v-application--wrap {
-//   min-height: fit-content;
-// }
 .cursor{
   cursor: pointer;
 }
