@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "server/index.js",
     "generate": "nuxt generate",
     "heroku-postbuild": "npm run build"
   },
@@ -19,6 +19,7 @@
     "core-js": "^3.19.3",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "http-proxy-middleware": "^2.0.6",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
