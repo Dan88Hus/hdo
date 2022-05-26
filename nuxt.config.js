@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - hdo',
+    titleTemplate: 'PJWD01 - HDO',
     title: 'hdo',
     htmlAttrs: {
       lang: 'en'
