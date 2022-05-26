@@ -45,9 +45,10 @@ module.exports = {
     "@nuxtjs/dotenv",
   ],
   server: {
-    // host : '0.0.0.0',
+    host : '0.0.0.0',
     port: process.env.PORT || 3000,
   },
+
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -65,7 +66,10 @@ module.exports = {
       },
     ],
   ],
-
+  axios: {
+    proxy: true,
+    baseURL: process.env.BASE_URL || "http://localhost:3000/",
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
