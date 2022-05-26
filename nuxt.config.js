@@ -44,6 +44,9 @@ module.exports = {
     '@nuxtjs/vuetify',
     "@nuxtjs/dotenv",
   ],
+  server: {
+    port: process.env.PORT || 3000,
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
