@@ -5,9 +5,11 @@ var cors = require('cors');
 const { readdirSync } = require("fs");
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
+// const { createProxyMiddleware } = require('http-proxy-middleware');
 
 // Then use it before your routes are set up:
-app.use(cors());
+app.use(cors())
+// app.use('/api', createProxyMiddleware({ target: 'http://127.0.0.1:3000/', changeOrigin: true }));
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
