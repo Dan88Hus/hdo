@@ -49,6 +49,17 @@ module.exports = {
   modules: [
     "@nuxtjs/axios",
     "@nuxtjs/dotenv",
+    [
+      "vue-toastification/nuxt",
+      {
+        timeout: 2000,
+        draggable: true,
+        position: "top-right",
+        pauseOnHover: true,
+        closeButton: "button",
+        icon: true,
+      },
+    ],
   ],
 
 
