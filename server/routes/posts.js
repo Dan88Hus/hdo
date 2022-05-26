@@ -4,6 +4,6 @@ const Posts = require('../controllers/posts')
 
 //api
 router.post('/images', Posts.images)
-// router.post('/sendmail', Posts.sendMail)
+router.post('/sendmail', Posts.sendMail)
 
 module.exports = router

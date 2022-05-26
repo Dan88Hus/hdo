@@ -15,7 +15,7 @@
       ></v-text-field>
       <v-text-field
         v-model="form.email"
-        label="E-mail"
+        label="Enter E-mail that you will receive for test purposes"
         required
         :rules="[required('Email')]"
       ></v-text-field>
@@ -58,7 +58,7 @@ export default {
     submit() {
       this.valid = false;
       this.$axios.$post("api/sendmail", this.form).then((res) => {
-        this.$toast.success("E-Mail sent successfully");
+        this.$toast.success(`E-Mail sent successfully ${this.form.email}`);
         this.form.firstname = "";
         this.form.lastname = "";
         this.form.telephone = "";
