@@ -1,4 +1,4 @@
-// import required libraries and assing it const variable
+// import required libraries and assing it const variable, libraries are installed from node package manager called npm
 const cloudinary = require("cloudinary").v2;
 const sgMail = require("@sendgrid/mail");
 
