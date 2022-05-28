@@ -1,27 +1,30 @@
+//  this file is entry point to run project
 
 const express = require('express')
+// exxpress is assigned as "app"
 const app = express()
+/* cors is used allow server and client can communicate freely with allowed proxy, 
+otherwise most browser restrict to data transferring for security reason.
+*/
 var cors = require('cors');
 const { readdirSync } = require("fs");
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
-// const { createProxyMiddleware } = require('http-proxy-middleware');
 
-// Then use it before your routes are set up:
+// cors is used as middleware to wrap application
 app.use(cors())
-// app.use('/api', createProxyMiddleware({ target: 'http://127.0.0.1:3000/', changeOrigin: true }));
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }));
 
 
-// Import and Set Nuxt.js options
+// Nuxt has global configs so we should Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
 config.dev = !(process.env.NODE_ENV === 'production')
 
 async function start() {
-  // Init Nuxt.js
+  // Initialize Nuxt.js object which takes confog parameters.
   const nuxt = new Nuxt(config)
 
   const { host, port } = nuxt.options.server
@@ -46,17 +49,17 @@ async function start() {
 }
 start()
 
-// for test purposes
+// for test purposes, its get method so test can be done on browsers
 app.get('/test', (req, res) => {
   res.send('test is OK')
 })
 
 
-//routes import 
-// routes middleware
-
+// joins the specified path segments into one path.
 var normalizedPath = require("path").join(__dirname, "routes");
 
+/* files in routes folder for rest API that maybe more than 1 file can be added later, so we dont need to indicate each file path 
+ "/api" is added rest end point
+*/
 
-// files in routes folder for rest API 
 readdirSync(normalizedPath).forEach((file) => {app.use("/api", require("./routes/" + file))})
