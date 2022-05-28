@@ -6,7 +6,10 @@
     <Lorem/>
     <!-- <v-divider width="0"></v-divider> -->
     <Cloudinary/>
-    <!-- <v-divider width="0"></v-divider> -->
+    <v-divider width="0"></v-divider>
+    <h4 class="text-center">Contact Form</h4>
+    <v-divider width="0"></v-divider>
+
     <ContactForm/>
 
   </v-app>
