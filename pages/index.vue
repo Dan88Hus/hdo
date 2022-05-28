@@ -8,7 +8,7 @@
     <h4 class="text-center">Contact Form</h4>
     <v-divider width="0"></v-divider>
     <ContactForm/>
-
+    <v-divider width="0"></v-divider>
   </v-app>
 </template>
 
