@@ -14,14 +14,14 @@ let publicSecureUrl = [];
 
 /* this function will use cloudinary library to fetch images https path and send image paths as array to client
   this will be triggered by rest api end point. we also need to use forEach method to push "https path" to "publicSecureUrl" 
-  array because of response can be send once to client. For cloudinary options we used to fetch only "image" type and only uploaded files.
+  array because of response can be send once to client. For cloudinary options we used to fetch only "image" type and only uploaded files with max files 50 fetched .
   try-catch block is used because of its asynchrounous function (to prevent blocking client) and to prevent application crash.
   at the end of function, we reset publicSecureUrl so when user refresh page , pictures will not be shown as duplicated on page
 */
 exports.images = async function (req, res) {
   try {
     await cloudinary.api.resources(
-      { resource_type: "image", type: "upload" },
+      { resource_type: "image", type: "upload", max_results:50 },
       function (error, result) {
         result.resources.forEach((element) => {
           publicSecureUrl.push(element.secure_url);
