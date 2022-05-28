@@ -1,4 +1,5 @@
 <template>
+  <!-- by using @submit annotation we will force the submit method to triggered and prevent default submit refresh page -->
   <v-row>
     <v-form v-model="valid" @submit.prevent="submit">
       <v-text-field
@@ -41,6 +42,7 @@
 export default {
   data() {
     return {
+      // valid is used to check if form either is valid
       valid: false,
       form: {
         firstname: "",
@@ -49,16 +51,20 @@ export default {
         telephone: "",
         message: "",
       },
+      // required is simple validation method from vuetify
       required(propertyType) {
         return (v) => (v && v.length > 0) || `Please enter ${propertyType}`;
       },
     };
   },
   methods: {
+    // submit is triggereing server end point and use "post" method to send form object which contains name....
     submit() {
       this.valid = false;
       this.$axios.$post("api/sendmail", this.form).then((res) => {
+        // when client receive response from server it send toast message to user as its success
         this.$toast.success(`E-Mail sent successfully ${this.form.email}`);
+        // clear the form on client-side
         this.form.firstname = "";
         this.form.lastname = "";
         this.form.telephone = "";
