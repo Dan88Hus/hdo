@@ -1,5 +1,5 @@
+<!-- display HDO company services on web page-->
 <template>
-  <!-- <v-app> -->
   <div>
     <v-row>
       <v-col cols="12" class="mx-0">
@@ -36,14 +36,11 @@
     </v-row>
     <v-divider width="0"></v-divider>
   </div>
-  <!-- </v-app> -->
 </template>
 
 <script>
-// import Logoheader from "../Navbar/logoHeader.vue";
 export default {
   components: {
-    // Logoheader,
   },
   data() {
     return {
@@ -56,7 +53,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// ::v-deep .v-application--wrap {
-//   min-height: fit-content;
-// }
 </style>
