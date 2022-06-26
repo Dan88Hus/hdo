@@ -17,9 +17,8 @@ $ npm run start
 $ npm run generate
 ```
 ## Deployed address
-```
+
     [Preoject website](https://pjwd01.herokuapp.com/ "HDO Project website")
-```
 
 ## Special Directories
 
