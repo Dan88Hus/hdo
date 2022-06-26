@@ -1,5 +1,5 @@
 # HDO Project 
-HDO is a fictional company that serve on interior decoration sector.
+HDO is a fictional company that serves mostly in the interior decoration sector. the purpose of the website is to display some past project pictures to introduce the company and can get an email from website visitors.
 
 # To installation
 Node.js must be installed on your machine. to download [Node.js](https://nodejs.org/en/)
