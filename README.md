@@ -4,16 +4,16 @@ HDO is a fictional company that serves mostly in the interior decoration sector.
 # To installation
 Node.js must be installed on your machine. to download [Node.js](https://nodejs.org/en/)
 
-## Build Setup
+## To run on terminal
 
 ```bash
-# to install dependencies
+# 1st step is to install dependencies
 $ npm install
 
-# serve with at localhost:3000
+# to run locally which serve with at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# commands to build for production and launch server
 $ npm run build
 $ npm run start
 ```
