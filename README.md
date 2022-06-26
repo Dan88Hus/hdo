@@ -1,24 +1,25 @@
-# hdo Project 
+# HDO Project 
+HDO is a fictional company that serve on interior decoration sector.
+
+# To installation
+Node.js must be installed on your machine. to download [Node.js](https://nodejs.org/en/)
 
 ## Build Setup
 
 ```bash
-# install dependencies
+# to install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# serve with at localhost:3000
 $ npm run dev
 
 # build for production and launch server
 $ npm run build
 $ npm run start
-
-# generate static project
-$ npm run generate
 ```
 ## Deployed address
+   [Website](https://pjwd01.herokuapp.com/)
 
-    https://pjwd01.herokuapp.com/
 
 ## Special Directories
 
