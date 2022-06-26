@@ -31,7 +31,7 @@
         <h6 class="dark-grey--text">Tree Applications</h6>
       </v-col>
       <v-col align-self="center">
-        <h6 class="dark-grey--text">Vertical Applications</h6>
+        <h6 class="dark-grey--text">Interior Decorations</h6>
       </v-col>
     </v-row>
     <v-divider width="0"></v-divider>
