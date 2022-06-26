@@ -7,7 +7,7 @@
     </v-main>
 
     <v-footer app>
-      Ozdogan-Huseyin_92111877_ PJWD _P2_S
+      Ozdogan-Huseyin_92111877_ PJWD _P3_S
     </v-footer>
   </v-app>
 </template>
