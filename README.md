@@ -20,6 +20,21 @@ $ npm run start
 ## Deployed address
    [Website Link](https://pjwd01.herokuapp.com/)
 
+## Test case data for contact form
+```bash
+#Name
+Can be any character
+#LastName
+can be any character
+#Email
+Email address that will receive email from website (project)
+#Telephone
+can be any character
+#comments
+can be any character
+```
+
+
 
 ## Special Directories
 
