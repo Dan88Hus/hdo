@@ -7,7 +7,7 @@
     <v-divider width="0"></v-divider>
     We would be happy to inform you in a personal meeting at your site to show you all the possibilities
     <h4 class="text-center">Contact Form</h4>
-    By using the contact form you can send us email about any topic, it can be about positive/negative feedback
+    By using the contact form you can send us email about any topic, we always look forward to hear your positive/negative feedback
     <v-divider width="0"></v-divider>
     <ContactForm/>
     <v-divider width="0"></v-divider>
