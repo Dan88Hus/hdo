@@ -18,7 +18,7 @@ $ npm run build
 $ npm run start
 ```
 ## Deployed address
-   [Website](https://pjwd01.herokuapp.com/)
+   [Website Link](https://pjwd01.herokuapp.com/)
 
 
 ## Special Directories
