@@ -18,11 +18,10 @@ To solve the issue, an SMTP (Simple Mail Transfer Protocol) provider is used whi
 - NPM (Node package manager) is used to install libraries
 ```
 
-# To installation
-Node.js must be installed on your machine. to download [Node.js](https://nodejs.org/en/)
+# Installation
+Node.js must be installed on your machine. To download [Node.js](https://nodejs.org/en/)
 
 ## To run on terminal
-
 ```bash
 # 1st step is to install dependencies
 $ npm install
