@@ -23,7 +23,7 @@ Node.js must be installed on your machine. To download [Node.js](https://nodejs.
 
 ### `To run on terminal`
 ```bash
-# 1st step is to install dependencies
+# 1st step is to install dependencies (Github does not accept libraries because of sizes therefore this step is essential to run)
 $ npm install
 
 # to run locally which serve with at localhost:3000
