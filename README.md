@@ -36,7 +36,7 @@ $ npm run start
 ## `Deployed address`
    [Website Link](https://pjwd01.herokuapp.com/)
 ## `1 min. Demonstration video`
-  ![Demo video](https://youtu.be/aQL8B4fWVug)
+  [(https://youtu.be/aQL8B4fWVug)![Demo video](https://img.youtube.com/vi/aQL8B4fWVug/1.jpg)]
 ## `Test case data for contact form`
 ```bash
 #Name
