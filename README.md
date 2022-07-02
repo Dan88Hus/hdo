@@ -36,7 +36,7 @@ $ npm run start
 ## `Deployed address`
    [Website Link](https://pjwd01.herokuapp.com/)
 ## `1 min. Demonstration video`
-  [(https://youtu.be/aQL8B4fWVug)![Demo video](https://img.youtube.com/vi/aQL8B4fWVug/1.jpg)]
+  [Demo video](https://youtu.be/aQL8B4fWVug)
 ## `Test case data for contact form`
 ```bash
 #Name
@@ -50,17 +50,12 @@ can be any character
 #comments
 can be any character
 ```
-## `Sources of pictures that used on project`
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 
 ## `Special Directories`
 
 ### `assets`
 
 The assets directory contains uncompiled assets such as Stylus or Sass files, images, or fonts.
-
 
 ### `components`
 
@@ -69,7 +64,6 @@ The components directory contains Vue.js components. Components make up the diff
 ### `pages`
 
 This directory contains application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
 
 ### `plugins`
 
@@ -81,8 +75,6 @@ This directory contains static files. Each file inside this directory is mapped 
 
 Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
-
 ### `store`
 
 This directory contains Vuex store files. Creating a file in this directory automatically activates Vuex.
-
